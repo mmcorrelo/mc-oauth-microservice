@@ -1,15 +1,15 @@
 /**
  * Name: Identity Access Management
- * Copyright UCrypto Event 2022 All Rights Reserved.
+ * Copyright {Project Name} 2022 All Rights Reserved.
  * Author: Miguel Correlo
- * Node module: @ucryptoevent/auth
+ * Node module: @oauth
  * This file is licensed under the MIT License.
  * License text available at https://opensource.org/licenses/MIT
  */
 
 import * as AuthMiddleware from '@middlewares/auth.middleware';
-import { IUser } from '@ucrypto-event/sdk';
-import { APIError } from '@ucrypto-event/utils';
+import { IUser } from '@project/sdk';
+import { APIError } from '@lib/utils';
 import { Router, Request, Response, NextFunction } from 'express';
 
 import * as UsersController from '@controllers/users';

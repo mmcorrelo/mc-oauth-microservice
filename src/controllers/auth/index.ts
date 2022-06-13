@@ -1,6 +1,6 @@
 /**
  * Name: Identity Access Management
- * Copyright UCrypto Event 2022 All Rights Reserved.
+ * Copyright {Project Name} 2022 All Rights Reserved.
  * Author: Miguel Correlo
  * Node module: @ucryptoevent/iam
  * This file is licensed under the MIT License.
@@ -9,8 +9,8 @@
 
 
 import bcrypt from 'bcryptjs';
-import { ErrorMessages } from '@ucrypto-event/utils';
-import { ISessionUser, IUser } from '@ucrypto-event/sdk';
+import { ErrorMessages } from '@lib/utils';
+import { ISessionUser, IUser } from '@project/sdk';
 
 import * as SessionConverter from '@controllers/auth/converter';
 import * as UserConverter from '@controllers/users/converter';

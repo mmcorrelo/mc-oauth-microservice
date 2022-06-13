@@ -1,15 +1,15 @@
 /**
  * Name: Identity Access Management
- * Copyright UCrypto Event 2022 All Rights Reserved.
+ * Copyright {Project Name} 2022 All Rights Reserved.
  * Author: Miguel Correlo
- * Node module: @ucryptoevent/auth
+ * Node module: @oauth
  * This file is licensed under the MIT License.
  * License text available at https://opensource.org/licenses/MIT
  */
 
 import { IncomingHttpHeaders } from 'http';
 
-import { ISessionUser } from '@ucrypto-event/sdk';
+import { ISessionUser } from '@project/sdk';
 import jwt from 'jsonwebtoken';
 
 import AuthConstants from '@configs/auth.constants';
