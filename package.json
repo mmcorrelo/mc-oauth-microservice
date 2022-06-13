@@ -1,0 +1,55 @@
+{
+  "name": "@ucrypto-event/auth-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "scripts": {
+    "build": "rm -rf build/ && tsc",
+    "clean": "rm -f -r node_modules dist && npm cache verify",
+    "db:start": "brew services start postgresql",
+    "db:stop": "brew services stop postgresql",
+    "dev": "nodemon src/server.ts",
+    "lint:fix": "eslint src/** --fix",
+    "lint": "eslint src/**",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Miguel Correlo <correlomm@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.13.0",
+    "@typescript-eslint/parser": "^5.22.0",
+    "eslint": "^8.14.0",
+    "eslint-config-airbnb-typescript": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.5.0",
+    "tsconfig-paths": "^3.14.0",
+    "typescript": "^4.5.5"
+  },
+  "dependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/bcryptjs": "^2.4.2",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^17.0.31",
+    "@ucrypto-event/sdk": "^1.0.0",
+    "@ucrypto-event/utils": "^1.0.0",
+    "axios": "^0.26.0",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
+    "morgan": "^1.10.0",
+    "mysql2": "^2.3.3",
+    "pg": "^8.7.3",
+    "sequelize": "^6.19.0",
+    "winston": "^3.6.0"
+  }
+}

@@ -1,0 +1,73 @@
+{
+	"compilerOptions": {
+		"forceConsistentCasingInFileNames": false,
+		"allowSyntheticDefaultImports": true,
+		"module": "commonjs",
+		"sourceMap": true,
+		"esModuleInterop": true,
+		"outDir": "./dist",
+		"rootDir": "./src",
+		"target": "es6",
+		"skipLibCheck": true,
+		"strict": true,
+		"baseUrl": "./",
+		"paths": {
+			"@controllers/*": [
+				"src/controllers/*"
+			],
+			"@routes": [
+				"src/routes/index",
+			],
+			"@dto": [
+				"src/dto/index.ts"
+			],
+			"@dto/*": [
+				"src/dto/*"
+			],
+			"@services": [
+				"src/services/index.ts"
+			],
+			"@services/*": [
+				"src/services/*"
+			],
+			"@models": [
+				"src/models/index.ts"
+			],
+			"@models/*": [
+				"src/models/*"
+			],
+			"@middlewares/*": [
+				"src/middlewares/*"
+			],
+			"@configs/*": [
+				"src/configs/*"
+			],
+			"@dal": [
+				"src/dal/index.ts"
+			],
+			"@dal/*": [
+				"src/dal/*"
+			],
+			"@dal/types": [
+				"src/dal/types/index.ts"
+			],
+			"@dal/types/*": [
+				"src/dal/types/*"
+			],
+			"@utils/error": [
+				"src/utils/error/index.ts"
+			],
+			"@utils/logger": [
+				"src/utils/logger/index.ts"
+			],
+			"@utils/*": [
+				"src/utils/*"
+			]
+		}
+	},
+	"ts-node": {
+		"require": [
+			"tsconfig-paths/register"
+		]
+	},
+}
